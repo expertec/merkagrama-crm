@@ -172,7 +172,6 @@ async function enviarMensaje(lead, mensaje) {
         }
         const audioMsg = {
           audio: audioBuffer,
-          mimetype: 'audio/mp4', // o 'audio/m4a'
           ptt: true
         };
         await sock.sendMessage(jid, audioMsg);
